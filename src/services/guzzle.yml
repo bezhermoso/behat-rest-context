@@ -1,0 +1,3 @@
+services:
+    behat.rest_extension.guzzle_client:
+        class: GuzzleHttp\Client

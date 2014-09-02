@@ -1,0 +1,30 @@
+{
+    "name": "bezhermoso/behat-rest-extension",
+    "description": "Behat contexts for testing REST APIs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bez Hermoso",
+            "email": "bezalelhermoso@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php" : ">=5.4.0",
+        "behat/behat" : "~2.5.0",
+        "symfony/http-foundation" : "2.3.*",
+        "symfony/property-access" : "2.3.*",
+        "guzzlehttp/guzzle" : "4.*",
+        "symfony/yaml" : "2.3.*"
+    },
+    "require-dev" : {
+        "symfony/framework-bundle" : "2.3.*",
+        "symfony/browser-kit" : "2.3.*",
+        "behat/symfony2-extension": "~1.1"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Bez\\Behat\\RestExtension\\" : "src"
+        }
+    }
+}

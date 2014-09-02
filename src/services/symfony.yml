@@ -1,0 +1,12 @@
+services:
+    behat.rest_extension.symfony_client:
+        class: Symfony\Component\BrowserKit\Client
+        factory_service: behat.rest_extension.symfony_container
+        factory_method: get
+        arguments:
+            - test.client
+
+    behat.rest_extension.symfony_container:
+        class: Symfony\Component\DependencyInjection\Container
+        factory_service: behat.symfony2_extension.kernel
+        factory_method: getContainer

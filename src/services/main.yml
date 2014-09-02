@@ -1,0 +1,3 @@
+services:
+    behat.rest_extension.response_stack:
+        class: Bez\Behat\RestExtension\ResponseStack
