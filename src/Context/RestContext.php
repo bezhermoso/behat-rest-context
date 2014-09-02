@@ -84,7 +84,7 @@ class RestContext extends BehatContext implements ResponseStackAwareInterface
     }
 
     /**
-     * @Then /^(\[.*\]) should(?:\sbe)? (.*)$/
+     * @Then /^((?:\[[^\[]+\])+) should(?:\sbe)? (.*)$/
      */
     public function assertStatement($propertyPath, $statement)
     {
@@ -99,7 +99,7 @@ class RestContext extends BehatContext implements ResponseStackAwareInterface
     }
 
     /**
-     * @Then /^(all|none|\d+|less than \d+|more than \d+) of (\[.*\]) should(?:\sbe)? (.*)$/
+     * @Then /^(all|none|\d+|less than \d+|more than \d+) of ((?:\[[^\[]+\])+) should(?:\sbe)? (.*)$/
      */
     public function assertStatementCollection($qualifier, $propertyPath, $statement)
     {
